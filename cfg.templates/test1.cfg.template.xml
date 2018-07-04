@@ -1,0 +1,29 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<configuration>
+	<files>
+		<file path="C:\Repositories\G4_Databases\20180630\G4\datos\ARTICULO.dbf" suffix="__ARTICULO" sep=',' enconding='iso-8859-1'>
+			<columns>
+				<!--<column col="Número operación" df_col="Deal_Id"/>
+				<column col="Código contrapartida" df_col="Counterparty_Id"/>
+				<column col="Franquicia" df_col="Franquicia"/>
+				<column col="Oficina" df_col="Oficina"/>
+				<column col="Unidad" df_col="Portfolio"/>
+				<column col="Entidad" df_col="Entidad"/>
+				<column col="Código producto" df_col="Codigo_Producto"/>
+				<column col="Producto" df_col="Producto"/>
+				<column col="Fecha operación" df_col="Fecha_Operacion"/>
+				<column col="Fecha contratación" df_col="Fecha_Contratacion"/>
+				<column col="Fecha valor" df_col="Fecha_Valor"/>
+				<column col="Fecha vencimiento" df_col="Fecha_Vencimiento"/>-->
+			</columns>
+			<merge_parameters parameters='{"how": "left", "on": ["Counterparty_Id"]}'/>
+		</file>
+		<!--<file path="H:\MVP00G938\XVA_DATABASE\STATIC_DATA\GM_PORTFOLIOS\entities_for_capital.csv" suffix="__EFC" enconding='iso-8859-1'>
+			<columns base="/request/parent_companies/parent_companies_item">
+				<column col="OFICINA" df_col="Oficina"/>
+				<column col="NOMBRE" df_col="Nombre_Oficina"/>
+			</columns>
+			<merge_parameters parameters='{"how": "left", "on": ["MatrixHouse_Id_Format"]}'/>
+		</file>-->
+	</files>
+</configuration>
